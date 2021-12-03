@@ -238,6 +238,7 @@ GameObject:
   - component: {fileID: 123883330}
   - component: {fileID: 123883329}
   - component: {fileID: 123883332}
+  - component: {fileID: 123883333}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -310,8 +311,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 123883332}
-        m_TargetAssemblyTypeName: OnSelectButton, Assembly-CSharp
-        m_MethodName: OnSelect
+        m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
+        m_MethodName: OntSelect_Start
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -371,10 +372,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc99c6b3ef0934b498772d171036d953, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD:Assets/Scenes/SampleScene.unity
-  text: {fileID: 1131409870}
-=======
->>>>>>> eb8feeb9fc310f9f4df779b5f881bfd7c50198dd:Assets/Scenes/StartScene.unity
+--- !u!114 &123883333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123883327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc99c6b3ef0934b498772d171036d953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -528,11 +537,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-<<<<<<< HEAD:Assets/Scenes/SampleScene.unity
-  m_Text: START
-=======
-  m_Text: "\u30B9\u30BF\u30FC\u30C8"
->>>>>>> eb8feeb9fc310f9f4df779b5f881bfd7c50198dd:Assets/Scenes/StartScene.unity
+  m_Text: 'Strat
+
+'
 --- !u!222 &555803366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -677,11 +684,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-<<<<<<< HEAD:Assets/Scenes/SampleScene.unity
-  m_Text: "\u30DC\u30BF\u30F3\u3092\u62BC\u3057\u3066\u306D\uFF01"
-=======
-  m_Text: "\u5BB6\u8A08\u7C3F\xD7\u30B3\u30EC\u30AF\u30B7\u30E7\u30F3\u30B2\u30FC\u30E0"
->>>>>>> eb8feeb9fc310f9f4df779b5f881bfd7c50198dd:Assets/Scenes/StartScene.unity
+  m_Text: "\u5BB6\u8A08\u7C3F*\u30B3\u30EC\u30AF\u30B7\u30E7\u30F3\u30B2\u30FC\u30E0"
 --- !u!222 &1131409871
 CanvasRenderer:
   m_ObjectHideFlags: 0

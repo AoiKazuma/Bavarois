@@ -2,15 +2,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class ChangeSceneButton : MonoBehaviour
 {
 
-    public void OnSelect()
+    public void OntSelect_Start()
     {
-        //この中にボタンが押されたときの処理を書く。
-        //今回はシーンを変更させる処理を書く。
-        //ちなみにこの関数の名前はOnSelectである必要はないです。
+        SceneManager.LoadScene("MenuScene");
     }
+
+    public void OnSElect_Record()
+    {
+        SceneManager.LoadScene("RecordScene");
+    }
+    public void OntSelect_Buck()
+    {
+        SceneManager.LoadScene("MenuScene");
+    }
+
+    public void OntSelect_Gacha()
+    {
+        SceneManager.LoadScene("GachaScene");
+    }
+
+    public void OntSelect_Play()
+    {
+        SceneManager.LoadScene("GachaGetScene");
+    }
+
 }

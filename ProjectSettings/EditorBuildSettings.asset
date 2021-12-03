@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GachaGetScene.unity
     guid: 162011d8c29160c49ae7ea6add267548
+  - enabled: 1
+    path: Assets/Scenes/RecordScene.unity
+    guid: b692b0f20f9a244af9f47bc9356991ac
   m_configObjects: {}
