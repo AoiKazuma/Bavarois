@@ -236,6 +236,7 @@ GameObject:
   - component: {fileID: 123883331}
   - component: {fileID: 123883330}
   - component: {fileID: 123883329}
+  - component: {fileID: 123883332}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -306,7 +307,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 123883330}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 123883332}
+        m_TargetAssemblyTypeName: OnSelectButton, Assembly-CSharp
+        m_MethodName: OnSelect
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &123883330
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -345,6 +358,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 123883327}
   m_CullTransparentMesh: 1
+--- !u!114 &123883332
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123883327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc99c6b3ef0934b498772d171036d953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 1131409870}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -488,7 +514,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
     m_FontSize: 35
-    m_FontStyle: 0
+    m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 10
     m_MaxSize: 72
@@ -498,7 +524,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: START
 --- !u!222 &555803366
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -643,7 +669,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u30DC\u30BF\u30F3\u304C\u62BC\u3055\u308C\u307E\u3057\u305F\uFF01"
+  m_Text: "\u30DC\u30BF\u30F3\u3092\u62BC\u3057\u3066\u306D\uFF01"
 --- !u!222 &1131409871
 CanvasRenderer:
   m_ObjectHideFlags: 0
