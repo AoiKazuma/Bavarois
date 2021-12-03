@@ -49,6 +49,7 @@ public class DataManager : MonoBehaviour
         writer.Close();
     }
 
+
     //セーブされたデータをロードする関数
     public SaveData Load()
     {
