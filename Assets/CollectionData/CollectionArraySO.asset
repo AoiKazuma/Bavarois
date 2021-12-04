@@ -15,7 +15,30 @@ MonoBehaviour:
   dogArray:
   - {fileID: 11400000, guid: 2d77a1ef0335e584d8be0af7cc71d14d, type: 2}
   - {fileID: 11400000, guid: 0942b1076d71f584bbd8a2197c42c76e, type: 2}
-  catArray: []
-  birdArray: []
-  reptilesArray: []
-  otherArray: []
+  - {fileID: 11400000, guid: 8ddeed92bd1d8b04286a9a7e142a6c66, type: 2}
+  - {fileID: 11400000, guid: 73552034c2098df48bf105695cf98661, type: 2}
+  - {fileID: 11400000, guid: 2beda749b65126944882dd7c757f1476, type: 2}
+  catArray:
+  - {fileID: 11400000, guid: 495fb3fa846acee4cae0292940b3167d, type: 2}
+  - {fileID: 11400000, guid: da2ed4f354b9d3e46823dd76f32eaf36, type: 2}
+  - {fileID: 11400000, guid: 489d60d53144e1c44b692a5887fedbb5, type: 2}
+  - {fileID: 11400000, guid: 6ffa324ed78108240b5b9a9540bf264f, type: 2}
+  - {fileID: 11400000, guid: 6b8ee3c04d7a95449ab761801d9b68b1, type: 2}
+  birdArray:
+  - {fileID: 11400000, guid: 39b07ed674010704f8a33130b396cb39, type: 2}
+  - {fileID: 11400000, guid: c3a035ba2acd5a9469cb7f1c65be45f1, type: 2}
+  - {fileID: 11400000, guid: 1a2972c804bf47b40ac373318935ce21, type: 2}
+  - {fileID: 11400000, guid: 2cefa04cfe60db543bf4c0a275e2fe55, type: 2}
+  - {fileID: 11400000, guid: eb1e6193db0b6254ea30ac07dc5d8623, type: 2}
+  reptilesArray:
+  - {fileID: 11400000, guid: f15235cea3f38e6488bd95ad5d3519d8, type: 2}
+  - {fileID: 11400000, guid: e18c6cda1096cf447b8a7cc970676dbf, type: 2}
+  - {fileID: 11400000, guid: 754233c30f2238540bb6f7b655f295ac, type: 2}
+  - {fileID: 11400000, guid: 907461ea62fde734e874fd141beaa67a, type: 2}
+  - {fileID: 11400000, guid: dcddfb718f75e5043b6e8153ee011a9b, type: 2}
+  originalArray:
+  - {fileID: 11400000, guid: fc3018c4020edad429d19ba7f140f498, type: 2}
+  - {fileID: 11400000, guid: f56e9e2a9de760749af6c3dc48661fcb, type: 2}
+  - {fileID: 11400000, guid: f509b968e7d84f54eb0aafd31a3febfe, type: 2}
+  - {fileID: 11400000, guid: 21c050d074faddc4cb8332657b9bb5ef, type: 2}
+  - {fileID: 11400000, guid: 79fea4167f9a31d4ab316838edbe0451, type: 2}
