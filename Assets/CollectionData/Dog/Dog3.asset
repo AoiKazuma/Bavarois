@@ -12,7 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b28107b1895b524490929c077a346b3, type: 3}
   m_Name: Dog3
   m_EditorClassIdentifier: 
-  collectionName: 
+  collectionName: "\u30C0\u30C3\u30AF\u30B9\u30D5\u30F3\u30C9"
   image: {fileID: 0}
-  index: 0
-  category: 0
