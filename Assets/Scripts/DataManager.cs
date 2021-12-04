@@ -5,7 +5,8 @@ using System.IO;
 
 public class DataManager : MonoBehaviour
 {
-    private static DataManager instance;
+    public static DataManager instance;
+    public int selectedCategoryForGacha = 0;
 
     private void Awake()
     {
