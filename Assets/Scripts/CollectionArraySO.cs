@@ -9,5 +9,5 @@ public class CollectionArraySO : ScriptableObject
     public CollectionSO[] catArray;
     public CollectionSO[] birdArray;
     public CollectionSO[] reptilesArray;
-    public CollectionSO[] otherArray;
+    public CollectionSO[] originalArray;
 }

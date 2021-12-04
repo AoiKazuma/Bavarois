@@ -10,7 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94f1b8dc75e6c5c4286b6afe82ec3df5, type: 3}
-  m_Name: CollectionListSO
+  m_Name: CollectionArraySO
   m_EditorClassIdentifier: 
-  dogArray: []
+  dogArray:
+  - {fileID: 11400000, guid: 2d77a1ef0335e584d8be0af7cc71d14d, type: 2}
+  - {fileID: 11400000, guid: 0942b1076d71f584bbd8a2197c42c76e, type: 2}
   catArray: []
+  birdArray: []
+  reptilesArray: []
+  otherArray: []

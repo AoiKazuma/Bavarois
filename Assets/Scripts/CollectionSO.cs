@@ -7,6 +7,8 @@ public class CollectionSO : ScriptableObject
 {
     public string collectionName;
     public Sprite image;
+    //Å´maybe not necessary...
+    /*
     public int index;
     public enum Category
     {
@@ -17,4 +19,5 @@ public class CollectionSO : ScriptableObject
         other
     }
     public Category category;
+    */
 }
