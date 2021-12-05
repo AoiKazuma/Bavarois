@@ -32,4 +32,9 @@ public class ChangeSceneButton : MonoBehaviour
         SceneManager.LoadScene("GachaGetScene");
     }
 
+    public void OntSelect_Expenses()
+    {
+        SceneManager.LoadScene("ExpensesScene");
+    }
+
 }

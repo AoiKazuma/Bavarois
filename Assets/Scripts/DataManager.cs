@@ -3,12 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 
-public class DataManager : MonoBehaviour
+public class DataManager : MonoBehaviour //private?
 {
-    private static DataManager instance;
+    public static DataManager instance;
 
     private void Awake()
-    {
+    {   
+        // ä»–ã®ã‚²ãƒ¼ãƒ ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã«ã‚¢ã‚¿ãƒƒãƒã•ã‚Œã¦ã„ã‚‹ã‹èª¿ã¹ã‚‹
         if (instance == null)
         {
             instance = this;
@@ -16,41 +17,36 @@ public class DataManager : MonoBehaviour
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject);// ã‚¢ã‚¿ãƒƒãƒã•ã‚Œã¦ã„ã‚‹å ´åˆã¯ç ´æ£„ã™ã‚‹ã€‚
         }
     }
 
 
-    //ƒf[ƒ^‚Ì‰Šú‰»BŠî–{“I‚É‚Íg‚í‚È‚¢‚ªA‰Šúó‘Ô‚É–ß‚µ‚ÄƒeƒXƒgƒvƒŒƒC‚µ‚½‚¢‚Æ‚«‚Æ‚©—LŒø
+    //ãƒ‡ãƒ¼ã‚¿ã®åˆæœŸåŒ–ã€‚åŸºæœ¬çš„ã«ã¯ä½¿ã‚ãªã„ãŒã€åˆæœŸçŠ¶æ…‹ã«æˆ»ã—ã¦ãƒ†ã‚¹ãƒˆãƒ—ãƒ¬ã‚¤ã—ãŸã„ã¨ãã¨ã‹æœ‰åŠ¹
     public SaveData InitData()
     {
         SaveData saveData = new SaveData();
-
         /*
         saveData.collection = 0;
         saveData.usedMoney = 0;
         */
-
         Save(saveData);
         return saveData;
     }
 
-    //ƒf[ƒ^‚ğƒZ[ƒu‚·‚éŠÖ”
+    //ãƒ‡ãƒ¼ã‚¿ã‚’ã‚»ãƒ¼ãƒ–ã™ã‚‹é–¢æ•°
     public void Save(SaveData saveData)
     {
         StreamWriter writer;
-
         string jsonstr = JsonUtility.ToJson(saveData);
-
         writer = new StreamWriter(Application.dataPath + "/savedata.json", false);
         writer.Write(jsonstr);
-        Debug.Log("•Û‘¶‚³‚ê‚½");
+        // Debug.Log("ã‚»ãƒ¼ãƒ–");
         writer.Flush();
         writer.Close();
     }
 
-
-    //ƒZ[ƒu‚³‚ê‚½ƒf[ƒ^‚ğƒ[ƒh‚·‚éŠÖ”
+    //ã‚»ãƒ¼ãƒ–ã•ã‚ŒãŸãƒ‡ãƒ¼ã‚¿ã‚’ãƒ­ãƒ¼ãƒ‰ã™ã‚‹é–¢æ•°
     public SaveData Load()
     {
         string datastr = "";

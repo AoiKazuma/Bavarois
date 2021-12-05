@@ -17,7 +17,9 @@ public class SaveData
     public int[] collection_bird = new int[]{0,0,0,0,0};
     public int[] collection_reptiles = new int[]{0,0,0,0,0};
     public int[] collection_original = new int[]{0,0,0,0,0};
-
-    public List<Log> log_list = new List<Log>();
     
+    [SerializeField]
+    public List<Log> log_list = new List<Log>();
+    // public List<int[]>　log_list = new List<int[]>();
+
 }
