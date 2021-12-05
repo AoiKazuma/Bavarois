@@ -17,6 +17,7 @@ public class ChangeSceneButton : MonoBehaviour
     {
         SceneManager.LoadScene("RecordScene");
     }
+
     public void OntSelect_Buck()
     {
         SceneManager.LoadScene("MenuScene");
@@ -30,6 +31,11 @@ public class ChangeSceneButton : MonoBehaviour
     public void OntSelect_Play()
     {
         SceneManager.LoadScene("GachaGetScene");
+    }
+
+    public void OntSelect_Collection()
+    {
+        SceneManager.LoadScene("CollectionScene");
     }
 
 }
