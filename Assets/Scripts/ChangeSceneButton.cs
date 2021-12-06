@@ -37,6 +37,7 @@ public class ChangeSceneButton : MonoBehaviour
     public void OntSelect_Expenses()
     {
         SceneManager.LoadScene("ExpensesScene");
+    }
 
     public void OntSelect_Collection()
     {
