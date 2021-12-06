@@ -8,15 +8,19 @@ public class SelectGacha : MonoBehaviour
     [SerializeField] private int categoryID;
     private Button executeButton;
     private Text ticketNumText;
+    private Text selectedCategoryText;
     private SaveData saveData;
     private int ticket;
+    private string[] categoryArray = new string[] { "犬", "猫", "鳥", "爬虫類", "オリジナル" };
 
     private void Start()
     {
         GameObject ExecuteButton = GameObject.Find("ExecuteButton");
         GameObject TicketNumText = GameObject.Find("TicketNumText");
+        GameObject SelectedCategoryText = GameObject.Find("SelectedCategoryText");
         executeButton = ExecuteButton.GetComponent<Button>();
         ticketNumText = TicketNumText.GetComponent<Text>();
+        selectedCategoryText = SelectedCategoryText.GetComponent<Text>();
 
 
         saveData = DataManager.instance.Load();
@@ -41,6 +45,8 @@ public class SelectGacha : MonoBehaviour
     }
     public void OnSelectGachaButton()
     {
+        //UI切替
+        selectedCategoryText.text = categoryArray[categoryID];
 
         //チケット数表示
         ticketNumText.text = $"残りチケット数：{ticket}";
@@ -49,7 +55,7 @@ public class SelectGacha : MonoBehaviour
         if (ticket > 0)
         {
             DataManager.instance.selectedCategoryForGacha = categoryID;
-            Debug.Log($"ID:{DataManager.instance.selectedCategoryForGacha}");
+            Debug.Log($"選択されたカテゴリー：{categoryArray[categoryID]}");
             executeButton.interactable = true;
         }
         else
