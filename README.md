@@ -8,6 +8,27 @@ Assets/Scripts：C#のスクリプトは基本ここに入れましょう。適�
 Assets/Image：画像データはここに入れましょう。ガチャの景品として得られるペットの絵の画像を入れたりします。  
 Assets/Prefabs：色んなところで流用するオブジェクトをここにまとめておくとラクです。たとえばシーン遷移のプログラムがアタッチされたボタンオブジェクトとかを保存しておくといちいち作る必要がなくなります。  
 
+### コレクションデータのクラス  
+コレクションの情報をAssets/CollectionDataのフォルダに一式まとめました。  
+各フォルダに犬、猫、鳥、爬虫類、オリジナルがそれぞれ5つインスタンス化されていて、それらを全部配列として格納したのがCollectionArraySOというものです。  
+(SOというのはScriptable Objectの略で、実際これらのオブジェクト生成にScriptable Objectというものを使用しています。詳しく知りたい人は調べてみてください！)  
+
+#### コレクションデータの参照方法
+変数宣言をする箇所で、  
+`[SerializeField] private CollectionArraySO collectionArray;`  
+と宣言してみてください。最後のcollectionArrayは好きに命名してもらって大丈夫です。  
+その後、例えば0から数えて4番目の犬を参照したい場合は、  
+`collectionArray.dogArray[4]`  
+という書き方で参照できます。この犬の名前を参照したい場合は、  
+`collectionArray.dogArray[4].collectionName`  
+となります。現在コレクションクラスのプロパティにはstring型のcollectionName,画像データのimageがあります。ここら辺の設定はCollectionSO.csというスクリプトで設定しています。  
+
+もう一つやらないといけないこととして、collectionArrayをアタッチするという作業があります。  
+コレクションデータを参照したスクリプトをアタッチした箇所を見てもらうと、以下のようにCollection Arrayという欄が追加されていると思います。  
+![image](https://user-images.githubusercontent.com/82635302/144706584-7395ec4a-6a37-4c00-a396-8be353ee68dc.png)  
+ここが「なし」のままになっているとエラーが出るので、右の◎ボタンから、CollectionArraySOを選択しましょう。  
+
+
 ### セーブ機能
 データのセーブ機能を追加しました。DataManagerというオブジェクトがグローバルで共有されるようになっており、DataManagerのメソッドを呼び出すことによりデータをJSONファイルから取り出せるようになっています。Assetフォルダ直下にsavedata.jsonというJSONファイルがあり、そこにデータが格納されています。  
 

@@ -563,6 +563,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &780718446
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6609342389818464092, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_Name
+      value: DataManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 540
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 960
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8912071727956999178, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: cc4ad69eab8460049887ecfb028c139d, type: 3}
 --- !u!1 &1284776354
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,6 +632,7 @@ GameObject:
   - component: {fileID: 1284776358}
   - component: {fileID: 1284776357}
   - component: {fileID: 1284776356}
+  - component: {fileID: 1284776359}
   m_Layer: 5
   m_Name: Button (3)
   m_TagString: Untagged
@@ -645,7 +703,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1284776357}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1284776359}
+        m_TargetAssemblyTypeName: ChangeSceneButton, Assembly-CSharp
+        m_MethodName: OntSelect_Collection
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1284776357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -684,6 +754,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1284776354}
   m_CullTransparentMesh: 1
+--- !u!114 &1284776359
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284776354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc99c6b3ef0934b498772d171036d953, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1298485332
 GameObject:
   m_ObjectHideFlags: 0
