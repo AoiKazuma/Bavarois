@@ -21,6 +21,8 @@ EditorBuildSettings:
     path: Assets/Scenes/RecordScene.unity
     guid: b692b0f20f9a244af9f47bc9356991ac
   - enabled: 1
+    path: Assets/Scenes/ExpensesScene.unity
+    guid: c45597ee4c4934968ad47e4c289b0787
     path: Assets/Scenes/CollectionScene/CatCollection.unity
     guid: 4c54fb33c2ce0432192e597345ad165a
   - enabled: 1
