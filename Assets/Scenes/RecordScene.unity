@@ -428,6 +428,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shoppingback: {fileID: 0}
+  mealback: {fileID: 0}
+  trafficback: {fileID: 0}
+  fixedcostback: {fileID: 0}
+  otherback: {fileID: 0}
 --- !u!1 &219748372
 GameObject:
   m_ObjectHideFlags: 0
@@ -522,9 +526,9 @@ RectTransform:
   - {fileID: 1925894483}
   - {fileID: 2029724876}
   - {fileID: 1666737696}
+  - {fileID: 1919977948}
   - {fileID: 1899201885}
   - {fileID: 498624587}
-  - {fileID: 1919977948}
   - {fileID: 1067484434}
   - {fileID: 1549032111}
   - {fileID: 139543210}
@@ -769,6 +773,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shoppingback: {fileID: 0}
+  mealback: {fileID: 0}
+  trafficback: {fileID: 0}
+  fixedcostback: {fileID: 0}
+  otherback: {fileID: 0}
 --- !u!1 &357872439
 GameObject:
   m_ObjectHideFlags: 0
@@ -878,7 +886,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 219748376}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1295,6 +1303,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shoppingback: {fileID: 0}
+  mealback: {fileID: 0}
+  trafficback: {fileID: 0}
+  fixedcostback: {fileID: 0}
+  otherback: {fileID: 0}
 --- !u!1 &686281696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,6 +1511,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shoppingback: {fileID: 0}
+  mealback: {fileID: 0}
+  trafficback: {fileID: 0}
+  fixedcostback: {fileID: 0}
+  otherback: {fileID: 0}
 --- !u!1 &995086196
 GameObject:
   m_ObjectHideFlags: 0
@@ -2293,7 +2309,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 219748376}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2368,7 +2384,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 219748376}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3113,3 +3129,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shoppingback: {fileID: 0}
+  mealback: {fileID: 0}
+  trafficback: {fileID: 0}
+  fixedcostback: {fileID: 0}
+  otherback: {fileID: 0}
