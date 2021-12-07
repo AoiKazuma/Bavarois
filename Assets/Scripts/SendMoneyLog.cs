@@ -36,6 +36,7 @@ public class SendMoneyLog : MonoBehaviour
         //まずは現在のJSONファイルを読み込む
         SaveData saveData = DataManager.instance.Load();
         //log_listにlogの新規追加
+    
         saveData.log_list.Add(log);
         // 上書き保存
         DataManager.instance.Save(saveData);
