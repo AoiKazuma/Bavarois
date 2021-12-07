@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Bird4
   m_EditorClassIdentifier: 
   collectionName: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: d419c960d5adf964cb0ed6ec975577cc, type: 3}

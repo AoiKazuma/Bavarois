@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Cat4
   m_EditorClassIdentifier: 
   collectionName: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 7ca63903d1d53d8459619153a9cc4218, type: 3}

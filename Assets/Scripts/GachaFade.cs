@@ -16,6 +16,7 @@ public class GachaFade : MonoBehaviour
 
 	[SerializeField] private GameObject[] beforeGameObjects;
 	[SerializeField] private GameObject[] afterGameObjects;
+	[SerializeField] private CollectionArraySO collectionArray;
 
 	Image fadeImage;
 	void Start()

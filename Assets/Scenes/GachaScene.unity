@@ -250,6 +250,10 @@ PrefabInstance:
       value: "\u56DE\u3059"
       objectReference: {fileID: 0}
     - target: {fileID: 2494373022268941050, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494373022268941050, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -504,7 +508,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0.24705882, g: 0.6666667, b: 0.8117647, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
