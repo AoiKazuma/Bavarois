@@ -23,4 +23,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ExpensesScene.unity
     guid: c45597ee4c4934968ad47e4c289b0787
+  - enabled: 1
+    path: Assets/Scenes/CollectionScene.unity
+    guid: b94ed9d47733d4278b8d6aa553cc1924
+  - enabled: 1
+    path: Assets/Scenes/CollectionScene/BirdCollection.unity
+    guid: ae5952d5b138d48e7aab06b87327dda7
+  - enabled: 1
+    path: Assets/Scenes/CollectionScene/DogCollection.unity
+    guid: 7e8edffe058964744b7c4c5f6d60fff1
+  - enabled: 1
+    path: Assets/Scenes/CollectionScene/ReptilesCollection.unity
+    guid: a4305e802587d443c8b077a83548880e
+  - enabled: 1
+    path: Assets/Scenes/CollectionScene/OriginalCollection.unity
+    guid: bc030162137ef476db2a5e2c52f50033
+  - enabled: 1
+    path: Assets/Scenes/CollectionScene/CatCollection.unity
+    guid: 4c54fb33c2ce0432192e597345ad165a
   m_configObjects: {}

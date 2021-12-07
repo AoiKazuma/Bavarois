@@ -36,8 +36,23 @@ public class SendMoneyLog : MonoBehaviour
         //まずは現在のJSONファイルを読み込む
         SaveData saveData = DataManager.instance.Load();
         //log_listにlogの新規追加
-    
         saveData.log_list.Add(log);
+        // ticket数の変更
+        if (type==0){
+            saveData.ticket_dog +=1;
+        }
+        else if (type==1){
+            saveData.ticket_cat +=1;
+        }
+         else if (type==2){
+            saveData.ticket_bird +=1;
+        }
+         else if (type==3){
+            saveData.ticket_reptiles +=1;
+        }
+        else{
+            saveData.ticket_original +=1;
+        }
         // 上書き保存
         DataManager.instance.Save(saveData);
         
