@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Gacha : MonoBehaviour
 {
     [SerializeField] private CollectionArraySO collectionArray;
+    [SerializeField] private Image collectionImage;
+
 
     // Start is called before the first frame update
     void Start()
@@ -21,30 +24,35 @@ public class Gacha : MonoBehaviour
                 saveData.ticket_dog--;
                 saveData.collection_dog[index] = 1;
                 DataManager.instance.Save(saveData);
+                collectionImage.sprite = collectionArray.dogArray[index].image;
                 Debug.Log($"{collectionArray.dogArray[index].collectionName}をゲットした！");
                 break;
             case 1:
                 saveData.ticket_cat--;
                 saveData.collection_cat[index] = 1;
                 DataManager.instance.Save(saveData);
+                collectionImage.sprite = collectionArray.catArray[index].image;
                 Debug.Log($"{collectionArray.catArray[index].collectionName}をゲットした！");
                 break;
             case 2:
                 saveData.ticket_bird--;
                 saveData.collection_bird[index] = 1;
                 DataManager.instance.Save(saveData);
+                collectionImage.sprite = collectionArray.birdArray[index].image;
                 Debug.Log($"{collectionArray.birdArray[index].collectionName}をゲットした！");
                 break;
             case 3:
                 saveData.ticket_reptiles--;
                 saveData.collection_reptiles[index] = 1;
                 DataManager.instance.Save(saveData);
+                collectionImage.sprite = collectionArray.reptilesArray[index].image;
                 Debug.Log($"{collectionArray.reptilesArray[index].collectionName}をゲットした！");
                 break;
             case 4:
                 saveData.ticket_original--;
                 saveData.collection_original[index] = 1;
                 DataManager.instance.Save(saveData);
+                collectionImage.sprite = collectionArray.originalArray[index].image;
                 Debug.Log($"{collectionArray.originalArray[index].collectionName}をゲットした！");
                 break;
         }
