@@ -117,7 +117,6 @@ public class UniGifImage : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(nowState);
         switch (nowState)
         {
             case State.None:

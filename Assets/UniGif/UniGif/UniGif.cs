@@ -28,7 +28,7 @@ public static partial class UniGif
         TextureWrapMode wrapMode = TextureWrapMode.Clamp,
         bool debugLog = false)
     {
-        int loopCount = -1;
+        int loopCount = 2;
         int width = 0;
         int height = 0;
 
