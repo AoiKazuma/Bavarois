@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Dog1
   m_EditorClassIdentifier: 
   collectionName: "\u30C1\u30EF\u30EF"
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 7410a0e02c22026419f2c9ed4c0938d7, type: 3}
