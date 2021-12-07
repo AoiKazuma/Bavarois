@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Reptiles1
   m_EditorClassIdentifier: 
   collectionName: 
-  image: {fileID: 0}
+  image: {fileID: 21300000, guid: 50781d0762c5b194686bc1c4fa02e440, type: 3}
