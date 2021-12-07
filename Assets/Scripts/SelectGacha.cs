@@ -11,7 +11,13 @@ public class SelectGacha : MonoBehaviour
     private Text selectedCategoryText;
     private SaveData saveData;
     private int ticket;
-    private string[] categoryArray = new string[] { "Œ¢", "”L", "’¹", "à¦’—Ş", "ƒIƒŠƒWƒiƒ‹" };
+    private string[] categoryArray = new string[] { "å“ºä¹³é¡", "æ˜†è™«", "é³¥é¡", "æµ·ã®ç”Ÿãç‰©", "ã‚·ãƒ¼ã‚¯ãƒ¬ãƒƒãƒˆ" };
+
+    public Image birdback;
+    public Image catback;
+    public Image dogback;
+    public Image originalback;
+    public Image reptilesback;
 
     private void Start()
     {
@@ -21,6 +27,17 @@ public class SelectGacha : MonoBehaviour
         executeButton = ExecuteButton.GetComponent<Button>();
         ticketNumText = TicketNumText.GetComponent<Text>();
         selectedCategoryText = SelectedCategoryText.GetComponent<Text>();
+
+        birdback = GameObject.Find("BirdBack").GetComponent<Image>();
+        birdback.enabled = false;
+        catback = GameObject.Find("CatBack").GetComponent<Image>();
+        catback.enabled = false;
+        dogback = GameObject.Find("DogBack").GetComponent<Image>();
+        dogback.enabled = false;
+        originalback = GameObject.Find("OriginalBack").GetComponent<Image>();
+        originalback.enabled = false;
+        reptilesback = GameObject.Find("ReptilesBack").GetComponent<Image>();
+        reptilesback.enabled = false;
 
 
         saveData = DataManager.instance.Load();
@@ -45,22 +62,142 @@ public class SelectGacha : MonoBehaviour
     }
     public void OnSelectGachaButton()
     {
-        //UIØ‘Ö
+        //UIï¿½Ø‘ï¿½
         selectedCategoryText.text = categoryArray[categoryID];
 
-        //ƒ`ƒPƒbƒg”•\¦
-        ticketNumText.text = $"c‚èƒ`ƒPƒbƒg”F{ticket}";
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½\ï¿½ï¿½
+        ticketNumText.text = $"æ®‹ã‚Šãƒã‚±ãƒƒãƒˆæ•°ï¼š{ticket}";
 
-        //ƒ`ƒPƒbƒg‚ª‚ ‚ê‚ÎƒKƒ`ƒƒ‚Éi‚ß‚é‚æ‚¤‚É‚·‚é
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎƒKï¿½`ï¿½ï¿½ï¿½Éiï¿½ß‚ï¿½æ‚¤ï¿½É‚ï¿½ï¿½ï¿½
         if (ticket > 0)
         {
             DataManager.instance.selectedCategoryForGacha = categoryID;
-            Debug.Log($"‘I‘ğ‚³‚ê‚½ƒJƒeƒSƒŠ[F{categoryArray[categoryID]}");
+            Debug.Log($"ï¿½Iï¿½ï¿½ï¿½ï¿½ï¿½ê‚½ï¿½Jï¿½eï¿½Sï¿½ï¿½ï¿½[ï¿½F{categoryArray[categoryID]}");
             executeButton.interactable = true;
         }
         else
         {
             executeButton.interactable = false;
         }
+    }
+    public void OnClickBirdButton(){
+        // èƒŒæ™¯é¸æŠ
+        birdback.enabled = true;
+        catback.enabled = false;
+        dogback.enabled = false;
+        originalback.enabled = false;
+        reptilesback.enabled = false;
+        selectedCategoryText.text = categoryArray[categoryID];
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½\ï¿½ï¿½
+        ticketNumText.text = $"æ®‹ã‚Šãƒã‚±ãƒƒãƒˆæ•°ï¼š{ticket}";
+
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎƒKï¿½`ï¿½ï¿½ï¿½Éiï¿½ß‚ï¿½æ‚¤ï¿½É‚ï¿½ï¿½ï¿½
+        if (ticket > 0)
+        {
+            DataManager.instance.selectedCategoryForGacha = categoryID;
+
+            executeButton.interactable = true;
+        }
+        else
+        {
+            executeButton.interactable = false;
+        }
+
+    }
+
+    public void OnClickCatButton(){
+        // èƒŒæ™¯é¸æŠ
+        birdback.enabled = false;
+        catback.enabled = true;
+        dogback.enabled = false;
+        originalback.enabled = false;
+        reptilesback.enabled = false;
+        selectedCategoryText.text = categoryArray[categoryID];
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½\ï¿½ï¿½
+        ticketNumText.text = $"æ®‹ã‚Šãƒã‚±ãƒƒãƒˆæ•°ï¼š{ticket}";
+
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎƒKï¿½`ï¿½ï¿½ï¿½Éiï¿½ß‚ï¿½æ‚¤ï¿½É‚ï¿½ï¿½ï¿½
+        if (ticket > 0)
+        {
+            DataManager.instance.selectedCategoryForGacha = categoryID;
+            executeButton.interactable = true;
+        }
+        else
+        {
+            executeButton.interactable = false;
+        }
+
+    }
+
+    public void OnClickDogButton(){
+        // èƒŒæ™¯é¸æŠ
+        birdback.enabled = false;
+        catback.enabled = false;
+        dogback.enabled = true;
+        originalback.enabled = false;
+        reptilesback.enabled = false;
+        selectedCategoryText.text = categoryArray[categoryID];
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½\ï¿½ï¿½
+        ticketNumText.text = $"æ®‹ã‚Šãƒã‚±ãƒƒãƒˆæ•°ï¼š{ticket}";
+
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎƒKï¿½`ï¿½ï¿½ï¿½Éiï¿½ß‚ï¿½æ‚¤ï¿½É‚ï¿½ï¿½ï¿½
+        if (ticket > 0)
+        {
+            DataManager.instance.selectedCategoryForGacha = categoryID;
+            executeButton.interactable = true;
+        }
+        else
+        {
+            executeButton.interactable = false;
+        }
+
+    }
+
+    public void OnClickOriginalButton(){
+        // èƒŒæ™¯é¸æŠ
+        birdback.enabled = false;
+        catback.enabled = false;
+        dogback.enabled = false;
+        originalback.enabled = true;
+        reptilesback.enabled = false;
+        selectedCategoryText.text = categoryArray[categoryID];
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½\ï¿½ï¿½
+        ticketNumText.text = $"æ®‹ã‚Šãƒã‚±ãƒƒãƒˆæ•°ï¼š{ticket}";
+
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎƒKï¿½`ï¿½ï¿½ï¿½Éiï¿½ß‚ï¿½æ‚¤ï¿½É‚ï¿½ï¿½ï¿½
+        if (ticket > 0)
+        {
+            DataManager.instance.selectedCategoryForGacha = categoryID;
+            executeButton.interactable = true;
+        }
+        else
+        {
+            executeButton.interactable = false;
+        }
+
+    }
+
+    public void OnClickReptilesButton(){
+        // èƒŒæ™¯é¸æŠ
+        birdback.enabled = false;
+        catback.enabled = false;
+        dogback.enabled = false;
+        originalback.enabled = false;
+        reptilesback.enabled = true;
+        selectedCategoryText.text = categoryArray[categoryID];
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½\ï¿½ï¿½
+        ticketNumText.text = $"æ®‹ã‚Šãƒã‚±ãƒƒãƒˆæ•°ï¼š{ticket}";
+
+        //ï¿½`ï¿½Pï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÎƒKï¿½`ï¿½ï¿½ï¿½Éiï¿½ß‚ï¿½æ‚¤ï¿½É‚ï¿½ï¿½ï¿½
+        if (ticket > 0)
+        {
+            DataManager.instance.selectedCategoryForGacha = categoryID;
+            executeButton.interactable = true;
+        }
+        else
+        {
+            executeButton.interactable = false;
+        }
+
     }
 }

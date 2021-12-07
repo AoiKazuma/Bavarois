@@ -2,23 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 
 public class SendMoneyLog : MonoBehaviour
 {
     GameObject Manager;
     ManagerScript script;
+    private Button enterButton;
     // public int date;
     public int yyyy;
     public int mm;
     public int dd;
     public int amount;
     public int type;
-
+    
     void Start(){
     Manager = GameObject.Find("Manager");
     script = Manager.GetComponent<ManagerScript>();
+    GameObject  EnterButton = GameObject.Find("EnterButton");
+    enterButton = EnterButton.GetComponent<Button>();
+
+    type=-1;
     }
+
+    void Update(){
+        type = script.Category_Type;
+        if (type != -1){
+            enterButton.interactable = true;
+        }
+        else{
+            enterButton.interactable = false;
+        }
+
+    }
+
 
     //Enterが押された時のする処理
     public void onSelect_Enter(){
@@ -37,6 +55,22 @@ public class SendMoneyLog : MonoBehaviour
         SaveData saveData = DataManager.instance.Load();
         //log_listにlogの新規追加
         saveData.log_list.Add(log);
+        // ticket数の変更
+        if (type==0){
+            saveData.ticket_dog +=1;
+        }
+        else if (type==1){
+            saveData.ticket_cat +=1;
+        }
+         else if (type==2){
+            saveData.ticket_bird +=1;
+        }
+         else if (type==3){
+            saveData.ticket_reptiles +=1;
+        }
+        else{
+            saveData.ticket_original +=1;
+        }
         // 上書き保存
         DataManager.instance.Save(saveData);
         
