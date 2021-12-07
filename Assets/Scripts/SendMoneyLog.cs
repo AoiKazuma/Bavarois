@@ -2,23 +2,41 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 
 public class SendMoneyLog : MonoBehaviour
 {
     GameObject Manager;
     ManagerScript script;
+    private Button enterButton;
     // public int date;
     public int yyyy;
     public int mm;
     public int dd;
     public int amount;
     public int type;
-
+    
     void Start(){
     Manager = GameObject.Find("Manager");
     script = Manager.GetComponent<ManagerScript>();
+    GameObject  EnterButton = GameObject.Find("EnterButton");
+    enterButton = EnterButton.GetComponent<Button>();
+
+    type=-1;
     }
+
+    void Update(){
+        type = script.Category_Type;
+        if (type != -1){
+            enterButton.interactable = true;
+        }
+        else{
+            enterButton.interactable = false;
+        }
+
+    }
+
 
     //Enterが押された時のする処理
     public void onSelect_Enter(){

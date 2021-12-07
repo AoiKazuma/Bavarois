@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b28107b1895b524490929c077a346b3, type: 3}
   m_Name: Dog4
   m_EditorClassIdentifier: 
-  collectionName: "\u30C0\u30EB\u30E1\u30B7\u30A2\u30F3"
-  image: {fileID: 0}
+  collectionName: "\u30C8\u30A4\u30D7\u30FC\u30C9\u30EB"
+  image: {fileID: 21300000, guid: bd764ceeb98352946b3f5906901fbc23, type: 3}
