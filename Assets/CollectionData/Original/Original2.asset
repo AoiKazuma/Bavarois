@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b28107b1895b524490929c077a346b3, type: 3}
   m_Name: Original2
   m_EditorClassIdentifier: 
-  collectionName: 
+  collectionName: "\u30AD\u30DE\u30A4\u30E9"
   image: {fileID: 21300000, guid: b5a47dad75611c54db505cf558569f19, type: 3}
