@@ -49,7 +49,6 @@ public class CategoryButton : MonoBehaviour
 
     public void OnClickTrafficButton(){
         script.Category_Type=1;
-        script.Category_Type=0;
         shoppingback.enabled = false;
         mealback.enabled = false;
         trafficback.enabled = true;
@@ -59,7 +58,6 @@ public class CategoryButton : MonoBehaviour
 
     public void OnClickShoppingButton(){
         script.Category_Type=2;
-        script.Category_Type=0;
         shoppingback.enabled = true;
         mealback.enabled = false;
         trafficback.enabled = false;
@@ -69,7 +67,6 @@ public class CategoryButton : MonoBehaviour
 
     public void OnClickFixedcostButton(){
         script.Category_Type=3;
-        script.Category_Type=0;
         shoppingback.enabled = false;
         mealback.enabled = false;
         trafficback.enabled = false;
@@ -79,7 +76,6 @@ public class CategoryButton : MonoBehaviour
 
     public void OnClickOtherButton(){
         script.Category_Type=4;
-        script.Category_Type=0;
         shoppingback.enabled = false;
         mealback.enabled = false;
         trafficback.enabled = false;
