@@ -15,6 +15,7 @@ public class CategoryButton : MonoBehaviour
     public Image trafficback;
     public Image fixedcostback;
     public Image otherback;
+    private Text category_Text;
 
 
     // Start is called before the first frame update
@@ -34,6 +35,9 @@ public class CategoryButton : MonoBehaviour
         otherback = GameObject.Find("OtherBack").GetComponent<Image>();
         otherback.enabled = false;
 
+        GameObject Category_Text = GameObject.Find("Category_Text");
+        category_Text = Category_Text.GetComponent<Text>();
+
 
     }
 
@@ -44,46 +48,47 @@ public class CategoryButton : MonoBehaviour
         trafficback.enabled = false;
         fixedcostback.enabled = false;
         otherback.enabled = false;
+        category_Text.text = "食事";
 
     }
 
     public void OnClickTrafficButton(){
         script.Category_Type=1;
-        script.Category_Type=0;
         shoppingback.enabled = false;
         mealback.enabled = false;
         trafficback.enabled = true;
         fixedcostback.enabled = false;
         otherback.enabled = false;
+        category_Text.text = "交通";
     }
 
     public void OnClickShoppingButton(){
         script.Category_Type=2;
-        script.Category_Type=0;
         shoppingback.enabled = true;
         mealback.enabled = false;
         trafficback.enabled = false;
         fixedcostback.enabled = false;
         otherback.enabled = false;
+        category_Text.text = "買い物";
     }
 
     public void OnClickFixedcostButton(){
         script.Category_Type=3;
-        script.Category_Type=0;
         shoppingback.enabled = false;
         mealback.enabled = false;
         trafficback.enabled = false;
         fixedcostback.enabled = true;
         otherback.enabled = false;
+        category_Text.text = "固定費";
     }
 
     public void OnClickOtherButton(){
         script.Category_Type=4;
-        script.Category_Type=0;
         shoppingback.enabled = false;
         mealback.enabled = false;
         trafficback.enabled = false;
         fixedcostback.enabled = false;
         otherback.enabled = true;
+        category_Text.text = "その他";
     }
 }
