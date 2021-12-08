@@ -39,7 +39,7 @@ public class test : MonoBehaviour
         fixedPer = FixedPer.GetComponent<Text>();
         GameObject OtherPer = GameObject.Find("OtherPer");
         otherPer = OtherPer.GetComponent<Text>();
-
+        sum = 0;
         Debug.Log(gameObject_1_yyyy);
         for (int r=0; r<saveData.log_list.Count; r++){
             if (saveData.log_list[r].yyyy==gameObject_1_yyyy){
@@ -77,7 +77,7 @@ public class test : MonoBehaviour
         fixedPer = FixedPer.GetComponent<Text>();
         GameObject OtherPer = GameObject.Find("OtherPer");
         otherPer = OtherPer.GetComponent<Text>();
-
+        sum = 0;
         Debug.Log(gameObject_1_yyyy);
         for (int r=0; r<saveData.log_list.Count; r++){
             if (saveData.log_list[r].yyyy==gameObject_1_yyyy){
