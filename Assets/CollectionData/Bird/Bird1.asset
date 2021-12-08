@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b28107b1895b524490929c077a346b3, type: 3}
   m_Name: Bird1
   m_EditorClassIdentifier: 
-  collectionName: 
+  collectionName: "\u30AA\u30A6\u30E0"
   image: {fileID: 21300000, guid: 9e44c2a0d3d48504ea4f6105c44b3667, type: 3}
