@@ -7,6 +7,9 @@ public class Gacha : MonoBehaviour
 {
     [SerializeField] private CollectionArraySO collectionArray;
     [SerializeField] private Image collectionImage;
+    [SerializeField] private Text collectionNameText;
+    [SerializeField] private Text rarelityText;
+    [SerializeField] private ParticleSystem particle;
 
 
     // Start is called before the first frame update
@@ -16,8 +19,12 @@ public class Gacha : MonoBehaviour
         SaveData saveData = DataManager.instance.Load();
 
         int index = GenerateCollectionIndex();
+        rarelityText.text = GetRarelity(index);
 
-        //‘I‚ñ‚¾ƒKƒ`ƒƒ‚ÌƒJƒeƒSƒŠ‚É‰‚¶‚Äˆ—‚ğ•ª‚¯‚é
+        var emission = particle.emission;
+        emission.rateOverTime = ParticleRate(index);
+
+        //ï¿½Iï¿½ñ‚¾ƒKï¿½`ï¿½ï¿½ï¿½ÌƒJï¿½eï¿½Sï¿½ï¿½ï¿½É‰ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ï¿½ğ•ª‚ï¿½ï¿½ï¿½
         switch (DataManager.instance.selectedCategoryForGacha)
         {
             case 0:
@@ -25,35 +32,40 @@ public class Gacha : MonoBehaviour
                 saveData.collection_dog[index] = 1;
                 DataManager.instance.Save(saveData);
                 collectionImage.sprite = collectionArray.dogArray[index].image;
-                Debug.Log($"{collectionArray.dogArray[index].collectionName}‚ğƒQƒbƒg‚µ‚½I");
+                collectionNameText.text = collectionArray.dogArray[index].collectionName;
+                Debug.Log($"{collectionArray.dogArray[index].collectionName}ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½I");
                 break;
             case 1:
                 saveData.ticket_cat--;
                 saveData.collection_cat[index] = 1;
                 DataManager.instance.Save(saveData);
                 collectionImage.sprite = collectionArray.catArray[index].image;
-                Debug.Log($"{collectionArray.catArray[index].collectionName}‚ğƒQƒbƒg‚µ‚½I");
+                collectionNameText.text = collectionArray.catArray[index].collectionName;
+                Debug.Log($"{collectionArray.catArray[index].collectionName}ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½I");
                 break;
             case 2:
                 saveData.ticket_bird--;
                 saveData.collection_bird[index] = 1;
                 DataManager.instance.Save(saveData);
                 collectionImage.sprite = collectionArray.birdArray[index].image;
-                Debug.Log($"{collectionArray.birdArray[index].collectionName}‚ğƒQƒbƒg‚µ‚½I");
+                collectionNameText.text = collectionArray.birdArray[index].collectionName;
+                Debug.Log($"{collectionArray.birdArray[index].collectionName}ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½I");
                 break;
             case 3:
                 saveData.ticket_reptiles--;
                 saveData.collection_reptiles[index] = 1;
                 DataManager.instance.Save(saveData);
                 collectionImage.sprite = collectionArray.reptilesArray[index].image;
-                Debug.Log($"{collectionArray.reptilesArray[index].collectionName}‚ğƒQƒbƒg‚µ‚½I");
+                collectionNameText.text = collectionArray.reptilesArray[index].collectionName;
+                Debug.Log($"{collectionArray.reptilesArray[index].collectionName}ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½I");
                 break;
             case 4:
                 saveData.ticket_original--;
                 saveData.collection_original[index] = 1;
                 DataManager.instance.Save(saveData);
                 collectionImage.sprite = collectionArray.originalArray[index].image;
-                Debug.Log($"{collectionArray.originalArray[index].collectionName}‚ğƒQƒbƒg‚µ‚½I");
+                collectionNameText.text = collectionArray.originalArray[index].collectionName;
+                Debug.Log($"{collectionArray.originalArray[index].collectionName}ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½I");
                 break;
         }
     }
@@ -83,5 +95,35 @@ public class Gacha : MonoBehaviour
         }
     }
 
-    
+    private string GetRarelity(int index)
+    {
+        if (index == 0 || index == 1)
+        {
+            return "â˜…â˜†â˜†";
+        }
+        else if(index == 2 || index == 3)
+        {
+            return "â˜…â˜…â˜†";
+        }
+        else
+        {
+            return "â˜…â˜…â˜…";
+        }
+    }
+
+    private float ParticleRate(int index)
+    {
+        if (index == 0 || index == 1)
+        {
+            return 5.0f;
+        }
+        else if (index == 2 || index == 3)
+        {
+            return 30.0f;
+        }
+        else
+        {
+            return 80.0f;
+        }
+    }
 }
