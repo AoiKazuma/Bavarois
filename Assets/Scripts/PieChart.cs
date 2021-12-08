@@ -44,7 +44,7 @@ public class PieChart : MonoBehaviour
             {
                 updateFlg = false;
                 ListValueAdd = 0;
-                print("end");
+                // print("end");
             }
         }
     }
