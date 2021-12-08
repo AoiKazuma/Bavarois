@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b28107b1895b524490929c077a346b3, type: 3}
   m_Name: Cat4
   m_EditorClassIdentifier: 
-  collectionName: 
+  collectionName: "\u30C1\u30E7\u30A6"
   image: {fileID: 21300000, guid: 7ca63903d1d53d8459619153a9cc4218, type: 3}
