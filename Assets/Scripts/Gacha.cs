@@ -24,7 +24,7 @@ public class Gacha : MonoBehaviour
         var emission = particle.emission;
         emission.rateOverTime = ParticleRate(index);
 
-        //‘I‚ñ‚¾ƒKƒ`ƒƒ‚ÌƒJƒeƒSƒŠ‚É‰‚¶‚Äˆ—‚ğ•ª‚¯‚é
+        //ï¿½Iï¿½ñ‚¾ƒKï¿½`ï¿½ï¿½ï¿½ÌƒJï¿½eï¿½Sï¿½ï¿½ï¿½É‰ï¿½ï¿½ï¿½ï¿½Äï¿½ï¿½ï¿½ï¿½ğ•ª‚ï¿½ï¿½ï¿½
         switch (DataManager.instance.selectedCategoryForGacha)
         {
             case 0:
@@ -33,7 +33,7 @@ public class Gacha : MonoBehaviour
                 DataManager.instance.Save(saveData);
                 collectionImage.sprite = collectionArray.dogArray[index].image;
                 collectionNameText.text = collectionArray.dogArray[index].collectionName;
-                Debug.Log($"{collectionArray.dogArray[index].collectionName}‚ğƒQƒbƒg‚µ‚½I");
+                Debug.Log($"{collectionArray.dogArray[index].collectionName}ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½I");
                 break;
             case 1:
                 saveData.ticket_cat--;
@@ -41,7 +41,7 @@ public class Gacha : MonoBehaviour
                 DataManager.instance.Save(saveData);
                 collectionImage.sprite = collectionArray.catArray[index].image;
                 collectionNameText.text = collectionArray.catArray[index].collectionName;
-                Debug.Log($"{collectionArray.catArray[index].collectionName}‚ğƒQƒbƒg‚µ‚½I");
+                Debug.Log($"{collectionArray.catArray[index].collectionName}ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½I");
                 break;
             case 2:
                 saveData.ticket_bird--;
@@ -49,7 +49,7 @@ public class Gacha : MonoBehaviour
                 DataManager.instance.Save(saveData);
                 collectionImage.sprite = collectionArray.birdArray[index].image;
                 collectionNameText.text = collectionArray.birdArray[index].collectionName;
-                Debug.Log($"{collectionArray.birdArray[index].collectionName}‚ğƒQƒbƒg‚µ‚½I");
+                Debug.Log($"{collectionArray.birdArray[index].collectionName}ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½I");
                 break;
             case 3:
                 saveData.ticket_reptiles--;
@@ -57,7 +57,7 @@ public class Gacha : MonoBehaviour
                 DataManager.instance.Save(saveData);
                 collectionImage.sprite = collectionArray.reptilesArray[index].image;
                 collectionNameText.text = collectionArray.reptilesArray[index].collectionName;
-                Debug.Log($"{collectionArray.reptilesArray[index].collectionName}‚ğƒQƒbƒg‚µ‚½I");
+                Debug.Log($"{collectionArray.reptilesArray[index].collectionName}ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½I");
                 break;
             case 4:
                 saveData.ticket_original--;
@@ -65,7 +65,7 @@ public class Gacha : MonoBehaviour
                 DataManager.instance.Save(saveData);
                 collectionImage.sprite = collectionArray.originalArray[index].image;
                 collectionNameText.text = collectionArray.originalArray[index].collectionName;
-                Debug.Log($"{collectionArray.originalArray[index].collectionName}‚ğƒQƒbƒg‚µ‚½I");
+                Debug.Log($"{collectionArray.originalArray[index].collectionName}ï¿½ï¿½ï¿½Qï¿½bï¿½gï¿½ï¿½ï¿½ï¿½ï¿½I");
                 break;
         }
     }
@@ -99,15 +99,15 @@ public class Gacha : MonoBehaviour
     {
         if (index == 0 || index == 1)
         {
-            return "š™™";
+            return "â˜…â˜†â˜†";
         }
         else if(index == 2 || index == 3)
         {
-            return "šš™";
+            return "â˜…â˜…â˜†";
         }
         else
         {
-            return "ššš";
+            return "â˜…â˜…â˜…";
         }
     }
 
@@ -119,11 +119,11 @@ public class Gacha : MonoBehaviour
         }
         else if (index == 2 || index == 3)
         {
-            return 7.0f;
+            return 30.0f;
         }
         else
         {
-            return 12.0f;
+            return 80.0f;
         }
     }
 }

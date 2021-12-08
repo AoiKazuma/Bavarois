@@ -5713,6 +5713,18 @@ PrefabInstance:
       propertyPath: m_Text
       value: "\u30E1\u30CB\u30E5\u30FC\u306B\u623B\u308B"
       objectReference: {fileID: 0}
+    - target: {fileID: 2494373021076385987, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
+      propertyPath: m_Color.b
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494373021076385987, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
+      propertyPath: m_Color.g
+      value: 0.15686275
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494373021076385987, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
+      propertyPath: m_Color.r
+      value: 0.15686275
+      objectReference: {fileID: 0}
     - target: {fileID: 2494373022268941050, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
       propertyPath: m_Enabled
       value: 1
