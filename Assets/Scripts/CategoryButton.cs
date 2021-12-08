@@ -15,6 +15,7 @@ public class CategoryButton : MonoBehaviour
     public Image trafficback;
     public Image fixedcostback;
     public Image otherback;
+    private Text category_Text;
 
 
     // Start is called before the first frame update
@@ -34,6 +35,9 @@ public class CategoryButton : MonoBehaviour
         otherback = GameObject.Find("OtherBack").GetComponent<Image>();
         otherback.enabled = false;
 
+        GameObject Category_Text = GameObject.Find("Category_Text");
+        category_Text = Category_Text.GetComponent<Text>();
+
 
     }
 
@@ -44,6 +48,7 @@ public class CategoryButton : MonoBehaviour
         trafficback.enabled = false;
         fixedcostback.enabled = false;
         otherback.enabled = false;
+        category_Text.text = "食事";
 
     }
 
@@ -54,6 +59,7 @@ public class CategoryButton : MonoBehaviour
         trafficback.enabled = true;
         fixedcostback.enabled = false;
         otherback.enabled = false;
+        category_Text.text = "交通";
     }
 
     public void OnClickShoppingButton(){
@@ -63,6 +69,7 @@ public class CategoryButton : MonoBehaviour
         trafficback.enabled = false;
         fixedcostback.enabled = false;
         otherback.enabled = false;
+        category_Text.text = "買い物";
     }
 
     public void OnClickFixedcostButton(){
@@ -72,6 +79,7 @@ public class CategoryButton : MonoBehaviour
         trafficback.enabled = false;
         fixedcostback.enabled = true;
         otherback.enabled = false;
+        category_Text.text = "固定費";
     }
 
     public void OnClickOtherButton(){
@@ -81,5 +89,6 @@ public class CategoryButton : MonoBehaviour
         trafficback.enabled = false;
         fixedcostback.enabled = false;
         otherback.enabled = true;
+        category_Text.text = "その他";
     }
 }

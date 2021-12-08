@@ -15,7 +15,7 @@ public class test : MonoBehaviour
         float[] category_sums = new float[]{0,0,0,0,0};
 
         for  (int r=0; r<saveData.log_list.Count; r++){
-            Debug.Log(saveData.log_list[r].type);
+            // Debug.Log(saveData.log_list[r].type);
             category_sums[saveData.log_list[r].type] += saveData.log_list[r].amount;
         }
         _pie.SetPieChartAnimation(category_sums);

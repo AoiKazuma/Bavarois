@@ -55,6 +55,7 @@ public class SendMoneyLog : MonoBehaviour
         SaveData saveData = DataManager.instance.Load();
         //log_listにlogの新規追加
         saveData.log_list.Add(log);
+        Debug.Log(type);
         // ticket数の変更
         if (type==0){
             saveData.ticket_dog +=1;
