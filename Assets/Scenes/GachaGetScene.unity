@@ -243,7 +243,7 @@ MonoBehaviour:
   m_filterMode: 0
   m_wrapMode: 1
   m_loadOnStart: 1
-  m_loadOnStartUrl: "\u30AC\u30C1\u30E3gif.gif"
+  m_loadOnStartUrl: gachagif.gif
   m_rotateOnLoading: 0
   m_outputDebugLog: 0
 --- !u!1 &885872445

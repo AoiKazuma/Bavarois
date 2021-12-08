@@ -1074,6 +1074,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: SelectGacha, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 7266306354870355995, guid: 67698600c6895464a911bc6c8a43cdc7, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 843ec7973b4d142808493f9cae2c6ab8, type: 3}
     m_RemovedComponents:
     - {fileID: 7266306354870355997, guid: 67698600c6895464a911bc6c8a43cdc7, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 67698600c6895464a911bc6c8a43cdc7, type: 3}
@@ -1185,6 +1189,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2500021803192303867, guid: 15036b1bd44e855458a1dd665c6c3a28, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e3ca188fde99a42daad14cdcbbdeb647, type: 3}
     - target: {fileID: 2500021803192303870, guid: 15036b1bd44e855458a1dd665c6c3a28, type: 3}
       propertyPath: m_Name
       value: CatButton
@@ -1575,6 +1583,18 @@ PrefabInstance:
     - target: {fileID: 2494373021076385987, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
       propertyPath: m_Text
       value: "\u623B\u308B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494373022268941049, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
+      propertyPath: m_Color.b
+      value: 0.49803925
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494373022268941049, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
+      propertyPath: m_Color.g
+      value: 0.49803925
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494373022268941049, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
+      propertyPath: m_Color.r
+      value: 0.49803925
       objectReference: {fileID: 0}
     - target: {fileID: 2494373022268941050, guid: 48b2fab5c3d1c014fa12d124c831d284, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
